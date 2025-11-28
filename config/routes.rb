@@ -46,5 +46,9 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :api do
+    resources :users
+  end
+
   mount OpenFresk::Engine => "/"
 end
